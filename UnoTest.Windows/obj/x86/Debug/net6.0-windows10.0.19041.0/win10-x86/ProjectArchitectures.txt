@@ -1,1 +1,0 @@
-C:\astro.projects\UnoTest\UnoTest\UnoTest.Windows\UnoTest.Windows.csproj;x86
