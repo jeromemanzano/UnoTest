@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "03VrO+bUoMilTU/ps4E/VXGOKLkOuPHmxvg+CWroHUA=",
+  "Source": "UnoTest.Wasm",
+  "BasePath": "_content/UnoTest.Wasm",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UnoTest.Wasm\\wwwroot",
+      "Source": "UnoTest.Wasm",
+      "ContentRoot": "C:\\astro.projects\\UnoTest\\UnoTest\\UnoTest.Wasm\\wwwroot\\",
+      "BasePath": "_content/UnoTest.Wasm",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\astro.projects\\UnoTest\\UnoTest\\UnoTest.Wasm\\wwwroot\\web.config",
+      "SourceId": "UnoTest.Wasm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\astro.projects\\UnoTest\\UnoTest\\UnoTest.Wasm\\wwwroot\\",
+      "BasePath": "_content/UnoTest.Wasm",
+      "RelativePath": "web.config",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web.config"
+    }
+  ]
+}

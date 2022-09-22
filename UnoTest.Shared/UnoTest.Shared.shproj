@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>6279c845-92f8-4333-ab99-3d213163593c</ProjectGuid>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.props" />
+  <PropertyGroup />
+  <Import Project="UnoTest.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
+  <ItemGroup>
+    <UpToDateCheckInput Remove="ChatView.xaml" />
+    <UpToDateCheckInput Remove="SpaceView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <_Globbed_Compile Remove="ChatView.xaml.cs" />
+    <_Globbed_Compile Remove="Extensions.cs" />
+    <_Globbed_Compile Remove="SpaceView.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <_Globbed_Content Remove="Assets\background_spaceview2.jpg" />
+    <_Globbed_Content Remove="Assets\Lottie\confusion.json" />
+    <_Globbed_Content Remove="Assets\p-1.jpg" />
+    <_Globbed_Content Remove="Assets\p-10.jpg" />
+    <_Globbed_Content Remove="Assets\p-100.jpg" />
+    <_Globbed_Content Remove="Assets\p-101.jpg" />
+    <_Globbed_Content Remove="Assets\p-102.jpg" />
+    <_Globbed_Content Remove="Assets\p-103.jpg" />
+    <_Globbed_Content Remove="Assets\p-104.jpg" />
+    <_Globbed_Content Remove="Assets\p-105.jpg" />
+    <_Globbed_Content Remove="Assets\p-106.jpg" />
+    <_Globbed_Content Remove="Assets\p-107.jpg" />
+    <_Globbed_Content Remove="Assets\p-108.jpg" />
+    <_Globbed_Content Remove="Assets\p-109.jpg" />
+    <_Globbed_Content Remove="Assets\p-11.jpg" />
+    <_Globbed_Content Remove="Assets\p-110.jpg" />
+    <_Globbed_Content Remove="Assets\p-111.jpg" />
+    <_Globbed_Content Remove="Assets\p-112.jpg" />
+    <_Globbed_Content Remove="Assets\p-113.jpg" />
+    <_Globbed_Content Remove="Assets\p-114.jpg" />
+    <_Globbed_Content Remove="Assets\p-115.jpg" />
+    <_Globbed_Content Remove="Assets\p-116.jpg" />
+    <_Globbed_Content Remove="Assets\p-117.jpg" />
+    <_Globbed_Content Remove="Assets\p-118.jpg" />
+    <_Globbed_Content Remove="Assets\p-119.jpg" />
+    <_Globbed_Content Remove="Assets\p-12.jpg" />
+    <_Globbed_Content Remove="Assets\p-120.jpg" />
+    <_Globbed_Content Remove="Assets\p-13.jpg" />
+    <_Globbed_Content Remove="Assets\p-14.jpg" />
+    <_Globbed_Content Remove="Assets\p-15.jpg" />
+    <_Globbed_Content Remove="Assets\p-16.jpg" />
+    <_Globbed_Content Remove="Assets\p-17.jpg" />
+    <_Globbed_Content Remove="Assets\p-18.jpg" />
+    <_Globbed_Content Remove="Assets\p-19.jpg" />
+    <_Globbed_Content Remove="Assets\p-2.jpg" />
+    <_Globbed_Content Remove="Assets\p-20.jpg" />
+    <_Globbed_Content Remove="Assets\p-21.jpg" />
+    <_Globbed_Content Remove="Assets\p-22.jpg" />
+    <_Globbed_Content Remove="Assets\p-23.jpg" />
+    <_Globbed_Content Remove="Assets\p-24.jpg" />
+    <_Globbed_Content Remove="Assets\p-25.jpg" />
+    <_Globbed_Content Remove="Assets\p-26.jpg" />
+    <_Globbed_Content Remove="Assets\p-27.jpg" />
+    <_Globbed_Content Remove="Assets\p-28.jpg" />
+    <_Globbed_Content Remove="Assets\p-29.jpg" />
+    <_Globbed_Content Remove="Assets\p-3.jpg" />
+    <_Globbed_Content Remove="Assets\p-30.jpg" />
+    <_Globbed_Content Remove="Assets\p-31.jpg" />
+    <_Globbed_Content Remove="Assets\p-32.jpg" />
+    <_Globbed_Content Remove="Assets\p-33.jpg" />
+    <_Globbed_Content Remove="Assets\p-34.jpg" />
+    <_Globbed_Content Remove="Assets\p-35.jpg" />
+    <_Globbed_Content Remove="Assets\p-36.jpg" />
+    <_Globbed_Content Remove="Assets\p-37.jpg" />
+    <_Globbed_Content Remove="Assets\p-38.jpg" />
+    <_Globbed_Content Remove="Assets\p-39.jpg" />
+    <_Globbed_Content Remove="Assets\p-4.jpg" />
+    <_Globbed_Content Remove="Assets\p-40.jpg" />
+    <_Globbed_Content Remove="Assets\p-41.jpg" />
+    <_Globbed_Content Remove="Assets\p-42.jpg" />
+    <_Globbed_Content Remove="Assets\p-43.jpg" />
+    <_Globbed_Content Remove="Assets\p-44.jpg" />
+    <_Globbed_Content Remove="Assets\p-45.jpg" />
+    <_Globbed_Content Remove="Assets\p-46.jpg" />
+    <_Globbed_Content Remove="Assets\p-47.jpg" />
+    <_Globbed_Content Remove="Assets\p-48.jpg" />
+    <_Globbed_Content Remove="Assets\p-49.jpg" />
+    <_Globbed_Content Remove="Assets\p-5.jpg" />
+    <_Globbed_Content Remove="Assets\p-50.jpg" />
+    <_Globbed_Content Remove="Assets\p-51.jpg" />
+    <_Globbed_Content Remove="Assets\p-52.jpg" />
+    <_Globbed_Content Remove="Assets\p-53.jpg" />
+    <_Globbed_Content Remove="Assets\p-54.jpg" />
+    <_Globbed_Content Remove="Assets\p-55.jpg" />
+    <_Globbed_Content Remove="Assets\p-56.jpg" />
+    <_Globbed_Content Remove="Assets\p-57.jpg" />
+    <_Globbed_Content Remove="Assets\p-58.jpg" />
+    <_Globbed_Content Remove="Assets\p-59.jpg" />
+    <_Globbed_Content Remove="Assets\p-6.jpg" />
+    <_Globbed_Content Remove="Assets\p-60.jpg" />
+    <_Globbed_Content Remove="Assets\p-61.jpg" />
+    <_Globbed_Content Remove="Assets\p-62.jpg" />
+    <_Globbed_Content Remove="Assets\p-63.jpg" />
+    <_Globbed_Content Remove="Assets\p-64.jpg" />
+    <_Globbed_Content Remove="Assets\p-65.jpg" />
+    <_Globbed_Content Remove="Assets\p-66.jpg" />
+    <_Globbed_Content Remove="Assets\p-67.jpg" />
+    <_Globbed_Content Remove="Assets\p-68.jpg" />
+    <_Globbed_Content Remove="Assets\p-69.jpg" />
+    <_Globbed_Content Remove="Assets\p-7.jpg" />
+    <_Globbed_Content Remove="Assets\p-70.jpg" />
+    <_Globbed_Content Remove="Assets\p-71.jpg" />
+    <_Globbed_Content Remove="Assets\p-72.jpg" />
+    <_Globbed_Content Remove="Assets\p-73.jpg" />
+    <_Globbed_Content Remove="Assets\p-74.jpg" />
+    <_Globbed_Content Remove="Assets\p-75.jpg" />
+    <_Globbed_Content Remove="Assets\p-76.jpg" />
+    <_Globbed_Content Remove="Assets\p-77.jpg" />
+    <_Globbed_Content Remove="Assets\p-78.jpg" />
+    <_Globbed_Content Remove="Assets\p-79.jpg" />
+    <_Globbed_Content Remove="Assets\p-8.jpg" />
+    <_Globbed_Content Remove="Assets\p-80.jpg" />
+    <_Globbed_Content Remove="Assets\p-81.jpg" />
+    <_Globbed_Content Remove="Assets\p-82.jpg" />
+    <_Globbed_Content Remove="Assets\p-83.jpg" />
+    <_Globbed_Content Remove="Assets\p-84.jpg" />
+    <_Globbed_Content Remove="Assets\p-85.jpg" />
+    <_Globbed_Content Remove="Assets\p-86.jpg" />
+    <_Globbed_Content Remove="Assets\p-87.jpg" />
+    <_Globbed_Content Remove="Assets\p-88.jpg" />
+    <_Globbed_Content Remove="Assets\p-89.jpg" />
+    <_Globbed_Content Remove="Assets\p-9.jpg" />
+    <_Globbed_Content Remove="Assets\p-90.jpg" />
+    <_Globbed_Content Remove="Assets\p-91.jpg" />
+    <_Globbed_Content Remove="Assets\p-92.jpg" />
+    <_Globbed_Content Remove="Assets\p-93.jpg" />
+    <_Globbed_Content Remove="Assets\p-94.jpg" />
+    <_Globbed_Content Remove="Assets\p-95.jpg" />
+    <_Globbed_Content Remove="Assets\p-96.jpg" />
+    <_Globbed_Content Remove="Assets\p-97.jpg" />
+    <_Globbed_Content Remove="Assets\p-98.jpg" />
+    <_Globbed_Content Remove="Assets\p-99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <_Globbled_Page Remove="ChatView.xaml" />
+    <_Globbled_Page Remove="SpaceView.xaml" />
+  </ItemGroup>
+</Project>

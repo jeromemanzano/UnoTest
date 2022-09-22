@@ -1,0 +1,6 @@
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\UnoTest.Skia.WPF.csproj.AssemblyReference.cache
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\App.g.cs
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\UnoTest.Skia.WPF_Content.g.cs
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\UnoTest.Skia.WPF_MarkupCompile.cache
+C:\astro.projects\UnoTest\UnoTest\UnoTest.Skia.WPF\obj\Debug\net6.0-windows\UnoTest.Skia.WPF_MarkupCompile.lref

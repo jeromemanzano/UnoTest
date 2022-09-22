@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6279c845-92f8-4333-ab99-3d213163593c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UnoTest</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ChatView.xaml.cs">
+      <DependentUpon>ChatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SpaceView.xaml.cs">
+      <DependentUpon>SpaceView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)ChatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)SpaceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Assets\SharedAssets.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--
+		 Add files present in the shared project folder, excluding the ones
+		 explicitly included in the projitem, so files can be added from vscode
+		 without manipulating the projitem file.
+	-->
+    <Content Include="$(MSBuildThisFileDirectory)Assets\background_spaceview2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Lottie\confusion.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-10.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-100.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-101.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-102.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-103.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-104.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-105.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-106.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-107.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-108.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-109.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-11.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-110.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-111.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-112.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-113.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-114.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-115.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-116.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-117.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-118.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-119.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-12.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-120.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-13.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-14.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-15.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-16.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-17.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-18.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-19.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-20.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-21.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-22.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-23.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-24.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-25.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-26.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-27.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-28.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-29.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-3.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-30.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-31.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-32.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-33.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-34.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-35.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-36.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-37.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-38.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-39.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-4.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-40.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-41.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-42.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-43.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-44.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-45.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-46.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-47.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-48.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-49.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-5.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-50.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-51.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-52.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-53.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-54.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-55.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-56.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-57.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-58.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-59.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-6.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-60.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-61.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-62.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-63.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-64.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-65.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-66.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-67.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-68.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-69.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-7.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-70.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-71.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-72.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-73.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-74.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-75.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-76.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-77.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-78.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-79.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-8.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-80.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-81.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-82.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-83.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-84.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-85.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-86.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-87.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-88.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-89.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-9.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-90.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-91.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-92.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-93.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-94.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-95.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-96.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-97.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-98.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\p-99.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Lottie\confusion.json" />
+    <_Globbled_Page Include="$(MSBuildThisFileDirectory)**/*.xaml" Exclude="@(Page);@(ApplicationDefinition)">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </_Globbled_Page>
+    <Page Include="@(_Globbled_Page)" />
+    <_Globbed_Compile Include="$(MSBuildThisFileDirectory)**/*.xaml.cs" Exclude="@(Compile)">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </_Globbed_Compile>
+    <_Globbed_Compile Include="$(MSBuildThisFileDirectory)**/*.cs" Exclude="@(Compile);@(_Globbed_Compile)" />
+    <Compile Include="@(_Globbed_Compile)" />
+    <_Globbed_PRIResource Include="$(MSBuildThisFileDirectory)**/*.resw" Exclude="@(PRIResource)" />
+    <PRIResource Include="@(_Globbed_PRIResource)" />
+    <_Globbed_Content Include="$(MSBuildThisFileDirectory)Assets/**/*.*" Exclude="@(Content)" />
+    <Content Include="@(_Globbed_Content)" />
+    <!-- Mark the files from this folder as being part of WinUI -->
+    <Page Update="$(MSBuildThisFileDirectory)**/*.xaml" XamlRuntime="WinUI" />
+    <ApplicationDefinition Update="$(MSBuildThisFileDirectory)**/*.xaml" XamlRuntime="WinUI" />
+    <!-- Make sure XAML files force reevaluation of up-to-date checks -->
+    <UpToDateCheckInput Include="$(MSBuildThisFileDirectory)**/*.xaml" />
+  </ItemGroup>
+</Project>

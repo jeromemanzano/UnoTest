@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="UnoTest.SpaceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Canvas x:ConnectionId='2' x:Name="TestCanvas" 
+                Grid.Column="1"
+                AllowDrop="True">
+        <Canvas.Background>
+            <ImageBrush ImageSource="/Assets/background_spaceview2.jpg" />
+        </Canvas.Background>
+    </Canvas>
+</Page>
+

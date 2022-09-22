@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "UnoTest.sln",
+    "projects": [
+		"UnoTest.Shared\\UnoTest.Shared.shproj",
+
+		"UnoTest.Mobile\\UnoTest.Mobile.csproj",
+
+		"UnoTest.Wasm\\UnoTest.Wasm.csproj",
+
+		"UnoTest.Skia.Gtk\\UnoTest.Skia.Gtk.csproj",
+    ]
+  }
+}
