@@ -32,7 +32,7 @@ namespace UnoTest
             var items = new List<Chat>();
             for (int i = 0; i < size; i++)
             {
-                _chats.Add(new Chat()
+                items.Add(new Chat()
                 {
                     ChatType = (ChatType)(random.Next() % 3),
                     MessageNumber = _messageNumber
@@ -119,7 +119,7 @@ namespace UnoTest
                 }
             }
 
-            throw new NotImplementedException();
+            return RichText;
         }
     }
 }

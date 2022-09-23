@@ -66,13 +66,13 @@
     </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <TextBox x:Name="TextBox" Margin="0,50,0,0" AcceptsReturn="True" />
         <ListView x:Name="ListView"
-                  ItemTemplateSelector="{StaticResource TestTemplateSelector}"
-                  Grid.Row="0">
+                  Grid.Row="1"
+                  ItemTemplateSelector="{StaticResource TestTemplateSelector}">
         </ListView>
-        <TextBox Grid.Row="1" />
     </Grid>
 </Page>
