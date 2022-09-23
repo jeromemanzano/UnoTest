@@ -1,3 +1,6 @@
+The goal of this is to test if Uno can be used as an alternative UI framework
+
+
 ## Pros:
 
 - ListView virtualization greatly improves performance of chat compared to Avalonia's ListView. I tried loading 10,000 items but app seems to handle it well.
