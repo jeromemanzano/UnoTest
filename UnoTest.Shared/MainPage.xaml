@@ -8,15 +8,15 @@
     mc:Ignorable="d">
 
     <Grid>
-        <SplitView x:Name="SplitView"
-                   IsPaneOpen="True"
-                   DisplayMode="CompactOverlay">
-            <SplitView.Pane>
-                <StackPanel>
-                    <Button Content="Space" Click="OnSpaceButtonClick"/>
-                    <Button Content="Chat" Click="OnChatButtonClick"/>
-                </StackPanel>
-            </SplitView.Pane>
-        </SplitView>
+        <NavigationView x:Name="NavigationView"
+                        IsPaneOpen="False"
+                        IsPaneVisible="True"
+                        PaneDisplayMode="LeftMinimal">
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="Chats" Content="ChatView" Tag="Chat" />
+                <NavigationViewItem x:Name="Spaces" Content="SpaceView" Tag="Space" />
+            </NavigationView.MenuItems>
+
+        </NavigationView>
     </Grid>
 </Page>

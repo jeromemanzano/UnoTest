@@ -4,33 +4,39 @@ namespace UnoTest
 {
     public sealed partial class MainPage : Page
     {
-        private SplitView _splitView;
-        private SpaceView _spaceView;
-        private ChatView _chatView;
+        private NavigationView _navigationView;
+        private SpaceView SpaceView { get; } = new SpaceView();
+        private ChatView ChatView { get; } = new ChatView();
 
         public MainPage()
         {
             this.InitializeComponent();
-            _splitView = (SplitView)this.FindName("SplitView");
-
             this.Loaded += OnMainPageLoaded;
+            _navigationView = (NavigationView)this.FindName("NavigationView");
+            _navigationView.SelectionChanged += OnNavigationViewSelectionChanged;
         }
 
         private void OnMainPageLoaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
         {
-            _spaceView = new SpaceView();
-            _chatView = new ChatView();
-            _splitView.Content = _chatView;
+            _navigationView.Content = SpaceView;
+
         }
 
-        private void OnSpaceButtonClick(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+        private void OnNavigationViewSelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            _splitView.Content = _spaceView;
-        }
+            var clickedItem = (NavigationViewItem)args.SelectedItem;
+            string itemTag = (string)clickedItem.Tag;
 
-        private void OnChatButtonClick(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-        {
-            _splitView.Content = _chatView;
+            switch (itemTag)
+            {
+                case "Chat":
+                    _navigationView.Content = ChatView;
+                    break;
+
+                case "Space":
+                    _navigationView.Content = SpaceView;
+                    break;
+            }
         }
     }
 }
