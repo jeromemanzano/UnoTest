@@ -14,3 +14,15 @@
 
 ## Additional Info:
 https://gallery.platform.uno/
+
+## Samples:
+
+### WASM
+![wasm debug uno](https://user-images.githubusercontent.com/23254953/191890932-99252166-979f-4870-9d3d-0da8adc96e26.gif)
+
+### iOS
+![ios](https://user-images.githubusercontent.com/23254953/191891839-63033bca-2ff2-4658-8280-d3fe21c7cb70.gif)
+
+### Android
+
+![Android](https://user-images.githubusercontent.com/23254953/191892363-fbed51dc-5be3-4f7d-ac24-46a59d3d4767.gif)
