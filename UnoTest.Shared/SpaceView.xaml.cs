@@ -78,9 +78,8 @@ namespace UnoTest
             var canvasPoint = e.GetCurrentPoint(_canvas);
             var ellipsePoint = e.GetCurrentPoint(_draggedObject);
 
-            //TODO: debug location issue
-            Canvas.SetLeft(_draggedObject, canvasPoint.Position.X + ellipsePoint.Position.X);
-            Canvas.SetTop(_draggedObject, canvasPoint.Position.Y + ellipsePoint.Position.Y);
+            Canvas.SetLeft(_draggedObject, canvasPoint.Position.X - _ellipsePosition.Position.X);
+            Canvas.SetTop(_draggedObject, canvasPoint.RawPosition.Y);
 
             e.Handled = true;
         }
