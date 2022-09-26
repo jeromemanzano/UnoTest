@@ -8,7 +8,7 @@ namespace UnoTest
 {
     public sealed partial class SpaceView : Page
     {
-        private Ellipse _draggedObject;
+        private PersonPicture _draggedObject;
         private Canvas _canvas;
         private PointerPoint _ellipsePosition;
 
@@ -43,21 +43,22 @@ namespace UnoTest
             }
         }
 
-        private Ellipse CreateAvatar(int avatarValue)
+        private PersonPicture CreateAvatar(int avatarValue)
         {
-            var ellipse = new Ellipse() { Width = 50, Height = 50 };
-            var imageBrush = new ImageBrush();
+            var picture = new PersonPicture();
+            picture.Height = 50;
+            picture.Width = 50;
             var bitmap = new BitmapImage();
             bitmap.UriSource = new System.Uri($"ms-appx:///Assets/p-{avatarValue}.jpg");
-            ellipse.Fill = new ImageBrush() { ImageSource = bitmap };
-            ellipse.AllowDrop = true;
-            ellipse.PointerPressed += OnEllipsePointerPressed;
-            return ellipse;
+            picture.ProfilePicture = bitmap;
+            picture.AllowDrop = true;
+            picture.PointerPressed += OnEllipsePointerPressed;
+            return picture;
         }
 
         private void OnEllipsePointerPressed(object sender, Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
         {
-            if (sender is Ellipse ellipse)
+            if (sender is PersonPicture ellipse)
             {
                 _ellipsePosition = e.GetCurrentPoint(ellipse);
                 _draggedObject = ellipse;
