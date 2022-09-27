@@ -22,6 +22,19 @@ namespace UnoTest
             _listView = (ListView)this.FindName("ListView");
             _chats = new PaginatedCollection<Chat>(async (start, size) => await FetchItems(10000), 10);
             _listView.ItemsSource = _chats;
+            _listView.ContainerContentChanging += OnListViewContainerChanging;
+        }
+        private void OnListViewContainerChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
+        {
+            // This is for handling last read message. Value seems to be inaccurate for WASM need to investigate further.
+            // Also partially visible items are considered to be on screen based here https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.itemsstackpanel.lastvisibleindex?view=windows-app-sdk-1.1
+            var itemsStackPanel = sender.ItemsPanelRoot as ItemsStackPanel;
+            var lastVisibleIndex = itemsStackPanel.LastVisibleIndex;
+
+            if (lastVisibleIndex < 0)
+                return;
+            var vis = _chats[lastVisibleIndex];
+            Console.WriteLine($"Visible: {vis.MessageNumber} | {vis.ChatType}");
         }
 
         private async Task<Chat[]> FetchItems(int size)
