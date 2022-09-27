@@ -63,16 +63,11 @@ namespace UnoTest
             return Task.Run<LoadMoreItemsResult>(async () =>
             {
                 var items = await _fetch(_start, _pageSize);
-                await CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
+                await CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                 {
                     foreach (var item in items)
                     {
                         Add(item);
-                        if (Count > _pageSize)
-                        {
-                            //hack to give the UI time for layout udpates
-                            await Task.Delay(20);
-                        }
                     }
                 });
 
