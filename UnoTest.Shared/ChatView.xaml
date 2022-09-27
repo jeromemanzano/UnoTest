@@ -26,6 +26,8 @@
                             <Run Text="While this one is italicized."  FontStyle="Italic"/>
                             <LineBreak />
                             <Run Text="And this one will be bold."  FontWeight="Bold"/>
+                            <LineBreak />
+                            <Run Text="あいうえお" />
                         </TextBlock>
                     </StackPanel>
                 </StackPanel>
